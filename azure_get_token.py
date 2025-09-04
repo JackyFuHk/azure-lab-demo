@@ -29,7 +29,7 @@ def get_authority_url():
     auth_url = f'{authorization_url}?{urllib.parse.urlencode(params)}'
     print('open the following URL in browser and authorize:', auth_url)
     return {
-        'auth_url':auth_url
+        'auth_url':auth_url 
     } 
 
 @router.get('/get_token')
